@@ -51,7 +51,6 @@ bot.onText(/^\/weather$/,(message)=>{
 })
 bot.onText(/^\/clear$/,(message)=>{
     let chatId=message.from.id;
-    bot.deleteMessage()
     bot.sendMessage(chatId,'please provide a name of any city...😃',{
         reply_to_message_id:message.message_id
     })
